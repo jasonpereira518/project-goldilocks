@@ -107,7 +107,7 @@ if not np.isnan(st_teff) and not np.isnan(st_rad):
     
     if not np.isnan(pl_orbsmax) and not np.isnan(HZ_inner) and not np.isnan(HZ_outer):
         if pl_orbsmax < HZ_inner:
-            habitability_status = "Too Hot"
+            habitability_status = "Too Hot" 
         elif pl_orbsmax > HZ_outer:
             habitability_status = "Too Cold"
         else:
