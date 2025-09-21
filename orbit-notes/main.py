@@ -107,11 +107,7 @@ if not np.isnan(st_teff) and not np.isnan(st_rad):
     
     if not np.isnan(pl_orbsmax) and not np.isnan(HZ_inner) and not np.isnan(HZ_outer):
         if pl_orbsmax < HZ_inner:
-            if r["pl_name"] == "Kepler-22 b":
-                habitability_status = "Just Right"
-                habitability_score = pl_orbsmax+.2
-            else:
-                habitability_status = "Too Hot"
+            habitability_status = "Too Hot"
         elif pl_orbsmax > HZ_outer:
             habitability_status = "Too Cold"
         else:
